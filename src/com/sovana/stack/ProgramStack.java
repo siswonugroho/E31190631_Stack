@@ -51,7 +51,7 @@ public class ProgramStack {
     akan mengembalikan nilai posisi dari buku. Namun result ini akan menampilkan posisi
     buku dalam urutan terbalik dari angka urutan di output showStack(), sehingga angka result
     perlu dibalik urutannya agar sesuai dengan angka urutan di output showStack() (Lihat di else statement).
-    Method ini mempunyai parameter stack<string> yang akan di-push.
+    Method ini mempunyai parameter stack<string> yang akan dicari.
     */
     static void searchStack(Stack<String> stack){
         System.out.print("Cari buku: ");
@@ -68,7 +68,7 @@ public class ProgramStack {
     Method popStack akan menghapus/mengeluarkan buku yang terakhir dimasukkan dari koleksi.
     Fungsi pop() diletakkan dalam try-catch untuk menghandle error jika koleksi buku kosong,
     maka akan menampilkan pesan bahwa koleksi buku kosong.
-    Method ini mempunyai parameter stack<string> yang akan di-push.
+    Method ini mempunyai parameter stack<string> yang akan di-pop.
     */
     static void popStack(Stack<String> stack){
         try {
@@ -85,7 +85,7 @@ public class ProgramStack {
     dibuat di atas. Setiap menu diberi nomor urut. Untuk mengakses setiap menu, user harus
     memasukkan nomor urut salah satu menu. Jika nomor yang dimasukkan tidak ada dalam daftar,
     maka akan muncul pesan bahwa pilihan tidak valid.
-    Method ini mempunyai parameter stack<string> yang akan di-push.
+    Method ini mempunyai parameter stack<string> yang akan dimanipulasi dengan fungsi pada menu ini.
     */
     static void showMenu(Stack<String> stack){
         System.out.println("----KOLEKSI BUKU------");
